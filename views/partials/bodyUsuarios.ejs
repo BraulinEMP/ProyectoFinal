@@ -1,0 +1,18 @@
+<table class="table table-success table-striped table-hover">
+    <thead>
+        <tr>
+            <th scope="col">id</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Correo-Electronico</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% for(var i=0; i < results.length; i++) { %>
+        <tr>
+            <td><%= results[i].id %></td>
+            <td><%= results[i].Nombre %></td>
+            <td><%= results[i].Correo %></td>
+        </tr>
+        <%} %>
+    </tbody>
+</table>
