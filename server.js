@@ -11,7 +11,7 @@ app.use(express.urlencoded({
     extended: false
 }));
 
-app.get('/Inicio', (req, res) => res.render('pages/Inicio'))
+app.get('/', (req, res) => res.render('pages/Inicio'))
 app.get('/Nosotros', (req, res) => res.render('pages/Nosotros'))
 app.get('/Servicios', (req, res) => res.render('pages/Servicios'))
 app.get('/Contactos', (req, res) => res.render('pages/Contactos'))
